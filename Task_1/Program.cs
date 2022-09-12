@@ -2,22 +2,22 @@
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
-double NaturalDegree (int A, int B)
+double NaturalDegree(int A, int B)
 {
-    double result = Math.Pow(A,B);
+    double result = Math.Pow(A, B);
     return result;
 }
 
 try
-{   
+{
     Console.Write("Введите число A: ");
     int a = int.Parse(Console.ReadLine());
     Console.Write("Введите число B: ");
     int b = int.Parse(Console.ReadLine());
-    double result = NaturalDegree(a,b);
+    double result = NaturalDegree(a, b);
     Console.WriteLine($"число {a} в натуральной степени {b} = {result}");
 }
 catch (Exception ex)
 {
- Console.WriteLine($"Входное значение имеет неверный формат. Ошибка: {ex.Message}");
+    Console.WriteLine($"Входное значение имеет неверный формат. Ошибка: {ex.Message}");
 }

@@ -3,14 +3,14 @@
 // 82 -> 10
 // 9012 -> 12
 
-int SummNumber (int a)
+int SummNumber(int a)
 {
     int number = Math.Abs(a);
     int result = 0;
-    while (number>1)
-    { 
-      result = result+number%10;
-      number = number/10;
+    while (number > 1)
+    {
+        result = result + number % 10;
+        number = number / 10;
     }
     return result;
 }
